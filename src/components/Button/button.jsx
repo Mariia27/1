@@ -1,16 +1,17 @@
 import React from "react";
-import style from "../Button/button.css";
+import style from "../Button/Button.css";
 
-function Button({ onClick, onSubmit, type, active, text }) {
+function Button({ onClick, onSubmit,
+}) {
     return (
         <button
-            type={type}
-            className={style.button}
+            type={button}
+            className={style}
             onClick={onClick}
-            style={active}
+            //style={active}
             onSubmit={onSubmit}
         >
-            {text}
+            add to Cart
         </button>
     )
 

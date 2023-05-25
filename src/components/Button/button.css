@@ -1,0 +1,26 @@
+.button {
+    width: 1125px;
+    padding: 52px 34px;
+    border: none;
+    color: #089d23;
+    background-color: #128323;
+    box-shadow: 1px 2px 5px rgba(166, 192, 163, 0.4);
+    border-radius: 26px;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #ff751d;
+    color: #ffffff;
+}
