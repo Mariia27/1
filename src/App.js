@@ -1,7 +1,7 @@
 // import { Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
-import Form from "./components/Form/Form.jsx";
-import OrderList from "./components/OrderList/OrderList.jsx"
+import CartPage from "./components/main/CartPage.jsx";
+
 // import Login from "./routes/Login/Login";
 // import Home from "./routes/Home/Home";
 // import NotFound from "./routes/NotFound/NotFound";
@@ -23,8 +23,7 @@ function App() {
     return (
         <section>
             <Header />
-            <Form />
-            <OrderList />
+            <CartPage />
         </section>
 
     )

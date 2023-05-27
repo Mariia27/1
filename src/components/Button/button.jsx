@@ -5,7 +5,7 @@ function Button({ onClick, onSubmit,
 }) {
     return (
         <button
-            type={button}
+            //type={button}
             className={style}
             onClick={onClick}
             //style={active}

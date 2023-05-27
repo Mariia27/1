@@ -1,0 +1,41 @@
+.list{
+    display: flex;
+    background-color: blue;
+}
+.info{
+display: flex;
+flex-direction: column;
+}
+.number{
+    display: flex;
+    padding: auto;
+        margin: auto;
+}
+.values{
+    width: 100px;
+    height: 44px;
+    border: 25px;
+    border-color: tomato;
+    padding: auto;
+        margin: auto;
+}
+.arr{
+    display: flex;
+    flex-direction: column;
+    width: 22px;
+    height: 12px;
+}
+.pic{
+    width: 70 px;
+    height: 50 px;
+    background-color: tomato;
+    padding: auto;
+    margin: auto;
+}
+.text{
+    text-align: center;
+    color: black;
+    padding: auto;
+        margin: auto;
+
+}

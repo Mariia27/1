@@ -97,7 +97,7 @@ export default function Form({ props }) {
                     <p className={style.description}>Phone:</p>
                     <input
                         className={style.input}
-                        type="phone"
+                        type="tel"
                         name="phone"
                         required
                         value={phone}

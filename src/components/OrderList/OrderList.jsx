@@ -1,133 +1,65 @@
-import React, { useState } from "react";
-//import { registration, loginUser } from "../../redux/auth/operations";
-//import { useDispatch } from "react-redux";
+// import React, { useState } from "react";
+// //import { registration, loginUser } from "../../redux/auth/operations";
+// //import { useDispatch } from "react-redux";
 
 import style from "./OrderList.module.css";
 
-export default function OrderList({ props }) {
-    // const dispatch = useDispatch();
-    const [email, setMail] = useState("");
-    const [phone, setPhone] = useState("");
-    const [name, setName] = useState("");
-    const [adress, setAdress] = useState("");
-    const [isActiv, setIsActiv] = useState(true);
 
-    const waitCheck = (e) => {
-        const { name, value } = e.currentTarget;
-        if (name === "email") {
-            setMail(value);
-        }
-        if (name === "name") {
-            setName(value);
-        }
-        if (adress === 'adress') {
-            setAdress(value)
-        }
-    };
 
-    const waitPhone = (e) => {
-        setPhone(e.target.value);
-    };
+import { useState } from "react";
 
-    const handleChangeForm = () => {
-        setIsActiv(!isActiv);
-    };
-
-    const handlSubmit = (e) => {
-        e.preventDefault();
-        const user = {
-            name,
-            email,
-            phone,
-            adress,
-        };
-        submitUser(user);
-        setMail("");
-        setPhone("");
-        setName("");
-        setAdress("");
-    };
-
-    const submitUser = async ({ name, email, phone, adress }) => {
-        const options = {
-            name,
-            email,
-            phone,
-            adress,
-        };
-
-        // switch (isActiv) {
-        //     case true:
-        //         return await dispatch(registration(options));
-        //     case false:
-        //         return await dispatch(loginUser({ email, password }));
-        //     default:
-        //         return "I cannot login user";
-        // }
-    };
+const OrderList = () => {
+    const [value, setValue] = useState(0);
+    const [itemName, setItemName] = useState();
+    const [price, setPrice] = useState();
 
     return (
-        <div className={style.wrapper}>
-            <div className={style.OrderList}>
-                <img></img>
-                <p></p>
-                <p></p>
-
-            </div>
-            <form className={style.form} onSubmit={handlSubmit} autoComplete="off">
-                {isActiv && (
-                    <label className={style.label}>
-                        <p className={style.description}>Name:</p>
-                        <input
-                            className={style.input}
-                            type="text"
-                            name="name"
-                            value={name}
-                            required
-                            onChange={waitCheck}
-                        />
-                    </label>
-                )}
-                <label className={style.label}>
-                    <p className={style.description}>Email:</p>
-                    <input
-                        className={style.input}
-                        type="email"
-                        name="email"
-                        value={email}
-                        required
-                        onChange={waitCheck}
-                    />
-                </label>
-                <label className={style.label}>
-                    <p className={style.description}>Phone:</p>
-                    <input
-                        className={style.input}
-                        type="phone"
-                        name="phone"
-                        required
-                        value={phone}
-                        onChange={waitPhone}
-                    />
-                </label>
-                <label className={style.label}>
-                    <p className={style.description}>Adress:</p>
-                    <input
-                        className={style.input}
-                        type="adress"
-                        name="adress"
-                        value={adress}
-                        required
-                        onChange={waitCheck}
-                    />
-                </label>
-                <div className={style.formButton}>
-                    <button className={style.button} onClick={handleChangeForm} type="submit">
-                        Submit
-                    </button>
+        <div className={style.list}>
+            <div className={style.pic}>pic</div>
+            <div className={style.info}>
+                <div className={style.text}>
+                    <p>name {itemName}</p>
+                    <p>Price: {price}</p>
                 </div>
-            </form>
+                <div className={style.number}>
+                    <div className={style.values}>
+                        {value}
+                    </div>
+                    <div className={style.arr}>
+                        <button type="button" onClick={() => setValue(value + 1)}>
+                            <svg
+                                width="32"
+                                height="22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+
+                                <path
+                                    d="M22.086 20.914l2.829-2.829-8.914-8.914-8.914 8.914 2.828 2.828 6.086-6.086z"
+                                    fill="#0c0c0d"
+                                />
+                            </svg>
+                        </button>
+                        <button type="button" onClick={() => setValue(value - 1)}>
+                            <svg
+                                width="32"
+                                height="22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+
+                                <path
+                                    d="M9.914 11.086l-2.829 2.829 8.914 8.914 8.914-8.914-2.828-2.828-6.086 6.086z"
+                                    fill="#0c0c0d"
+                                />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
-
-}
+};
+export default OrderList;
