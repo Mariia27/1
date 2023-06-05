@@ -1,6 +1,7 @@
 .list{
     display: flex;
     background-color: blue;
+    margin-top: 15%;
 }
 .info{
 display: flex;
@@ -12,7 +13,7 @@ flex-direction: column;
         margin: auto;
 }
 .values{
-    width: 100px;
+    width: 200px;
     height: 44px;
     border: 25px;
     border-color: tomato;
