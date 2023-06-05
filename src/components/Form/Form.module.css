@@ -1,9 +1,23 @@
 .container {
     position: relative;
     width: 100%;
-    margin: 0 auto;
+    width: 200px;
 }
-
+.label{
+    margin: 0;
+    padding: 0;
+}
+.description{
+    margin: 0;
+    padding: 0;
+}
+.input{
+    border-radius: 5px;
+    min-width:100px;
+    height: 20px;
+    margin: 5px 15px 5px 15px ;
+    /* padding: 3px; */
+}
 
 
 .wrapper{
@@ -13,5 +27,16 @@ background-color: tomato;
 
 }
 .form{
-width: 200 px;
+border: 2px;
+/* border-color: black; */
+padding: 15px 200px 15px 15px;
+}
+.button{
+    width: 150px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+    margin-top: 15px;
+    margin-left: 50px;
 }

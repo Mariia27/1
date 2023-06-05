@@ -9,6 +9,7 @@ function CartPage(params) {
     <div className={style.cart}>
       <Form />
       <OrderList />
+
     </div>
   )
 }
