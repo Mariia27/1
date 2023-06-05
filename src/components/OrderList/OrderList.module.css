@@ -1,7 +1,8 @@
 .list{
     display: flex;
-    background-color: blue;
+    background-color: rgb(207, 199, 197);
     margin-top: 15%;
+    border-radius: 10px;
 }
 .info{
 display: flex;
