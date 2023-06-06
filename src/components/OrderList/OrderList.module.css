@@ -29,11 +29,18 @@ flex-direction: column;
 }
 .pic{
     position: absolute;
-    width: 70 px;
-    height: 50 px;
+    /* width: 170 px;
+    height: 50 px; */
     padding: auto;
     margin: auto;
-    background-image: url("../../IMG/burger.png")
+    top: 100px;
+        left: 265px;
+        right: 0px;
+        width: 153px;
+        height: 89px;
+    background-image: url("../../IMG/burger.png");
+    background-size:contain;
+    z-index: 1;
 }
 .text{
     text-align: center;
