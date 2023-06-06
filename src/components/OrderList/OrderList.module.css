@@ -28,11 +28,12 @@ flex-direction: column;
     height: 12px;
 }
 .pic{
+    position: absolute;
     width: 70 px;
     height: 50 px;
-    background-color: tomato;
     padding: auto;
     margin: auto;
+    background-image: url("../../IMG/burger.png")
 }
 .text{
     text-align: center;

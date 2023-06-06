@@ -15,7 +15,7 @@ const OrderList = () => {
 
     return (
         <div className={style.list}>
-            <img className={style.pic} srcset="" src="./" alt="burger" />
+            <div className={style.pic}></div>
             <div className={style.info}>
                 <div className={style.text}>
                     <p>name {itemName}</p>
