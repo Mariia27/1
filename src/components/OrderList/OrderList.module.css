@@ -4,23 +4,26 @@
     background-color: rgb(207, 199, 197);
     margin-top: 15%;
     border-radius: 10px;
+width: 500px;
 }
 .pic {
     position: absolute;
     padding: auto;
     margin: auto;
-    top: 10px;
-    left: 265px;
-    right: 0px;
+    
+    top: 100px;
+    /* left: 10px; */
+    
     width: 180px;
     height: 120px;
     background-image: url("../../IMG/burger.png");
     background-size: contain;
-    /* z-index: 1; */
 }
 .info{
 display: flex;
 flex-direction: column;
+
+
 }
 .number{
     display: flex;
