@@ -1,34 +1,52 @@
 .list{
     display: flex;
-    position: relative;
     background-color: rgb(207, 199, 197);
     margin-top: 15%;
+    padding: 10px;
     border-radius: 10px;
 width: 500px;
 }
+
+.info{
+position: relative;
+/* display: flex; */
+width: inherit;
+height: fit-content;
+flex-direction: column;
+border: 1px solid rgb(248, 245, 244);
+border-radius: 5px;
+}
 .pic {
-    position: absolute;
-    padding: auto;
-    margin: auto;
-    
-    top: 100px;
+    /* position: absolute; */
+    margin: 10px;
+    /* top: 10px; */
     /* left: 10px; */
-    
+
     width: 180px;
     height: 120px;
     background-image: url("../../IMG/burger.png");
     background-size: contain;
 }
-.info{
-display: flex;
-flex-direction: column;
-
-
+.text {
+    /* position: absolute; */
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0px;
+    top: 50px;
+    right: 5px;
+    /* text-align: center; */
+    color: black;
+    /* padding: auto;
+    margin: auto; */
+}
+p{
+    margin: 0px;
+    padding: 0px;
 }
 .number{
     display: flex;
-    padding: auto;
-        margin: auto;
+    /* padding: auto;
+        margin: auto; */
 }
 .values{
     width: 200px;
@@ -45,10 +63,4 @@ flex-direction: column;
     height: 12px;
 }
 
-.text{
-    text-align: center;
-    color: black;
-    padding: auto;
-        margin: auto;
 
-}
