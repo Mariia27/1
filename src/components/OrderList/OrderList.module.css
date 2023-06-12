@@ -7,12 +7,12 @@
 width: 500px;
 }
 
-.info{
+ .item {
 position: relative;
-/* display: flex; */
+display: flex;
 width: inherit;
 height: fit-content;
-flex-direction: column;
+flex-direction: row;
 border: 1px solid rgb(248, 245, 244);
 border-radius: 5px;
 }
@@ -27,6 +27,11 @@ border-radius: 5px;
     background-image: url("../../IMG/burger.png");
     background-size: contain;
 }
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
 .text {
     /* position: absolute; */
     margin-right: 10px;
@@ -49,12 +54,12 @@ p{
         margin: auto; */
 }
 .values{
-    width: 200px;
-    height: 44px;
-    border: 25px;
-    border-color: tomato;
-    padding: auto;
-        margin: auto;
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px 5px 0px 0px;
+    border: 1px solid rgb(248, 245, 244);
+    border-radius: 5px;
 }
 .arr{
     display: flex;
