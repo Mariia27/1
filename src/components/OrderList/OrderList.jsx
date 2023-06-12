@@ -26,11 +26,11 @@ const OrderList = () => {
                         <div className={style.values}>
                             {value}
                         </div>
-                        <div className={style.arr}>
-                            <button type="button" onClick={() => setValue(value + 1)}>
+                        <div className={style.arrov}>
+                            <button className={style.up} type="button" onClick={() => setValue(value + 1)}>
                                 <svg
-                                    width="32"
-                                    height="22"
+                                    width="30"
+                                    height="12"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
@@ -41,10 +41,10 @@ const OrderList = () => {
                                     />
                                 </svg>
                             </button>
-                            <button type="button" onClick={() => setValue(value - 1)}>
+                            <button className={style.down} type="button" onClick={() => setValue(value - 1)}>
                                 <svg
-                                    width="32"
-                                    height="22"
+                                    width="30"
+                                    height="12"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
