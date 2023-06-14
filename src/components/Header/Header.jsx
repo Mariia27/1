@@ -14,7 +14,10 @@ function Header() {
     return (
         <header className={style.header}>
             <div className={style.container}>
-                {/* <Link to={isLoggedIn ? "/home" : "/"}>
+                <link></link>
+                <p>Shops</p>
+                <p>Soping card</p>
+                {/* <Link to={isLoggedIn ? "/shop" : "/"}>
                     <img src={logo} alt="" width={90} height={30} />
                 </Link>
                 {isLoggedIn && <NavLink to="/team" className={style.container}>
