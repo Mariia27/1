@@ -30,13 +30,13 @@ const OrderList = () => {
                             <button className={style.up} type="button" onClick={() => setValue(value + 1)}>
                                 <svg
                                     width="30"
-                                    height="12"
+                                    height="20"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
 
                                     <path
-                                        d="M22.086 20.914l2.829-2.829-8.914-8.914-8.914 8.914 2.828 2.828 6.086-6.086z"
+                                        d="M18.086 20.914l2.829-2.829-8.914-8.914-8.914 8.914 2.828 2.828 6.086-6.086z"
                                         fill="#0c0c0d"
                                     />
                                 </svg>
@@ -44,13 +44,13 @@ const OrderList = () => {
                             <button className={style.down} type="button" onClick={() => setValue(value - 1)}>
                                 <svg
                                     width="30"
-                                    height="12"
+                                    height="14"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
 
                                     <path
-                                        d="M9.914 11.086l-2.829 2.829 8.914 8.914 8.914-8.914-2.828-2.828-6.086 6.086z"
+                                        d="M5.914 11.086l-2.829 2.829 8.914 8.914 8.914-8.914-2.828-2.828-6.086 6.086z"
                                         fill="#0c0c0d"
                                     />
                                 </svg>
