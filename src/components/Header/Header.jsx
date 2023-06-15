@@ -14,9 +14,11 @@ function Header() {
     return (
         <header className={style.header}>
             <div className={style.container}>
-                <link></link>
-                <p>Shops</p>
-                <p>Soping card</p>
+                {/* <NavLink to="/shops" className={style.container}> */}
+                <p className={style.shops}>Shops</p>
+                {/* </NavLink> */}
+
+                <p className={style.card}>Shoping card</p>
                 {/* <Link to={isLoggedIn ? "/shop" : "/"}>
                     <img src={logo} alt="" width={90} height={30} />
                 </Link>
